@@ -47,6 +47,13 @@ buttonGen.addEventListener('click', function () {
     console.log(age.value);
     console.log(totalPrice);
 
+    const nomePass = document.getElementById("nome-passeggero");
+    nomePass.innerHTML = `${inputName.value}`;
+
+    const ticketPrice = document.getElementById("costo-biglietto");
+    ticketPrice.innerHTML = `${totalPrice}`;
+
+
 });
 
 

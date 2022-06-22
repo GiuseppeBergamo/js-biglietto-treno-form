@@ -19,23 +19,36 @@
 
 <body>
 
+    <div class="container bg-danger">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="h1 fw-bold">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            </div>
+            <div class="col-12">
+                <div class="row">
 
-    <form action="">
-        <input type="text" placeholder="Nome e Cognome" id="name">
-        <input type="number" placeholder="km" name="chilometri" id="km">
-        <select name="fascia-età" id="age">
-            <option value="minorenne">Minorenne</option>
-            <option value="maggiorenne">Maggiorenne</option>
-            <option value="over65">over65</option>
-        </select>
-        <button id="btn-genera">Genera</button>
-        <button id="btn-annulla">Annulla</button>
-    </form>
+                    <div class="col-12 text-center">
+                        <input type="text" placeholder="Nome e Cognome" id="name">
+                        <input type="number" placeholder="km" name="chilometri" id="km">
+                        <select name="fascia-età" id="age">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over65">over65</option>
+                        </select>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button id="btn-genera">Genera</button>
+                        <button id="btn-annulla">Annulla</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div>
-
+        <div>
+            <p id="nome-passeggero"></p>
+            <p id="costo-biglietto"></p>
+        </div>
     </div>
-
 
 
 
