@@ -17,40 +17,74 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="bg-danger">
 
-    <div class="container bg-danger">
+    <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="h1 fw-bold">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+                <h2 class="h1 fw-bold text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
             </div>
-            <div class="col-12">
+            <div class="col-12 bg-white rounded">
                 <div class="row">
 
-                    <div class="col-12 text-center">
-                        <input type="text" placeholder="Nome e Cognome" id="name">
-                        <input type="number" placeholder="km" name="chilometri" id="km">
-                        <select name="fascia-età" id="age">
+                    <div class="col-12 text-center my-4">
+                        <input type="text" placeholder="Nome e Cognome" id="name" class="mx-2">
+                        <input type="number" placeholder="km" name="chilometri" id="km" class="mx-2">
+                        <select name="fascia-età" id="age" class="mx-2">
                             <option value="minorenne">Minorenne</option>
                             <option value="maggiorenne">Maggiorenne</option>
                             <option value="over65">over65</option>
                         </select>
                     </div>
-                    <div class="col-12 text-center">
-                        <button id="btn-genera">Genera</button>
-                        <button id="btn-annulla">Annulla</button>
+                    <div class="col-12 text-center my-4">
+                        <button id="btn-genera" class="mx-2">Genera</button>
+                        <button id="btn-annulla" class="mx-2">Annulla</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div>
-            <p id="nome-passeggero"></p>
-            <p id="costo-biglietto"></p>
+        <div class="row d-none">
+            <div class="col-12 text-center">
+                <h2 class="h1 fw-bold text-white">IL TUO BIGLIETTO</h2>
+            </div>
+            <div class="col-12 bg-white">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>DETTAGLIO PASSEGGERI</h3>
+                    </div>
+
+                    <div class="col-12 p-4">
+                        <div id="dettagli-biglietto" class="row border border-secondary border-end-0">
+                            <div class="col p-3 bg-secondary h-100">
+                                <h3 class="fw-bold">NOME PASSEGGERO</h3>
+                                <p id="nome-passeggero" class="h4 fw-bold"></p>
+                            </div>
+                            <div class="col d-flex flex-column justify-content-between p-3 h-100">
+                                <p class="fw-bold">Offerta</p>
+                                <p>Biglietto Standard</p>
+                            </div>
+                            <div class="col d-flex flex-column justify-content-between p-3 h-100">
+                                <p class="fw-bold">Carrozza</p>
+                                <p>5</p>
+                            </div>
+                            <div class="col d-flex flex-column justify-content-between p-3 h-100">
+                                <p class="fw-bold">Codice CP</p>
+                                <p>92763587</p>
+                            </div>
+                            <div class="col d-flex flex-column justify-content-between p-3 h-100">
+                                <p class="fw-bold">Costo Biglietto</p>
+                                <p id="costo-biglietto"></p>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-
 
     <script src="js/script.js"></script>
 </body>

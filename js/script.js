@@ -51,7 +51,7 @@ buttonGen.addEventListener('click', function () {
     nomePass.innerHTML = `${inputName.value}`;
 
     const ticketPrice = document.getElementById("costo-biglietto");
-    ticketPrice.innerHTML = `${totalPrice}`;
+    ticketPrice.innerHTML = `${totalPrice}€`;
 
 
 });
