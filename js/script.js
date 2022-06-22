@@ -24,6 +24,7 @@ const inputName = document.getElementById("name");
 const inputNumber = document.getElementById("km");
 const buttonGen = document.getElementById("btn-genera");
 const buttonAnn = document.getElementById("btn-annulla");
+const ticket = document.getElementById("biglietto");
 
 
 
@@ -53,9 +54,22 @@ buttonGen.addEventListener('click', function () {
     const ticketPrice = document.getElementById("costo-biglietto");
     ticketPrice.innerHTML = `${totalPrice}€`;
 
-
+    ticket.classList.remove("d-none");
 });
 
+buttonAnn.addEventListener('click', function () {
+
+    ticket.classList.add("d-none")
+
+    inputName.value = "";
+    console.log(inputName.value);
+    inputNumber.value = "";
+    console.log(inputName.value);
+    age.value = "";
+    console.log(age.value);
+
+
+});
 
 
 
