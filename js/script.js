@@ -24,8 +24,6 @@ const inputName = document.getElementById("name");
 const inputNumber = document.getElementById("km");
 const buttonGen = document.getElementById("btn-genera");
 const buttonAnn = document.getElementById("btn-annulla");
-const age = document.getElementById("age");
-const totalPrice = inputNumber.value * 0.21;
 
 
 
@@ -33,6 +31,17 @@ const totalPrice = inputNumber.value * 0.21;
 buttonGen.addEventListener('click', function () {
 
     console.log("mi hai cliccato!");
+    const age = document.getElementById("age");
+    let totalPrice = (inputNumber.value * 0.21).toFixed(2);
+
+    if (age.value === "minorenne") {
+        totalPrice = (totalPrice - ((totalPrice / 100) * 20)).toFixed(2);
+    } else if (age.value === "over65") {
+        totalPrice = (totalPrice - ((totalPrice / 100) * 40)).toFixed(2);
+    }
+
+
+
     console.log(inputName.value);
     console.log(inputNumber.value);
     console.log(age.value);
