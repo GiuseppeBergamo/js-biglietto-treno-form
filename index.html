@@ -27,14 +27,23 @@
             <div class="col-12 bg-white rounded">
                 <div class="row">
 
-                    <div class="col-12 text-center my-4">
-                        <input type="text" placeholder="Nome e Cognome" id="name" class="mx-2">
-                        <input type="number" placeholder="km" name="chilometri" id="km" class="mx-2">
-                        <select name="fascia-età" id="age" class="mx-2">
-                            <option value="minorenne">Minorenne</option>
-                            <option value="maggiorenne">Maggiorenne</option>
-                            <option value="over65">over65</option>
-                        </select>
+                    <div class="col-12 d-flex justify-content-center text-center my-4">
+                        <div>
+                            <h5 class="text-center text-danger">Nome e Cognome</h5>
+                            <input type="text" placeholder="Nome e Cognome" id="name" class="mx-2">
+                        </div>
+                        <div>
+                            <h5 class="text-center text-danger">Km da percorrere</h5>
+                            <input type="number" placeholder="km" name="chilometri" id="km" class="mx-2">
+                        </div>
+                        <div>
+                            <h5 class="text-center text-danger">Fascia d'età</h5>
+                            <select name="fascia-età" id="age" class="mx-2">
+                                <option value="minorenne">Minorenne</option>
+                                <option value="maggiorenne">Maggiorenne</option>
+                                <option value="over65">over65</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-12 text-center my-4">
                         <button id="btn-genera" class="mx-2">Genera</button>
